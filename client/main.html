@@ -1,22 +1,71 @@
 <head>
   <title>The Extra Mile</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-
 <body>
-  <div id="render-target"></div>
+  <header class="navbar navbar-expand flex-column flex-md-row bd-navbar sticky-top">
+    <a class="navbar-brand mr-0 mr-md-2">The Extra Mile</a>
+    <div class="navbar-nav-scroll ml-auto">
+      <ul class="navbar-nav bd-navbar-nav flex-row">
+        <li class="nav-item"><a class="nav-link" href="./about.html"> About Us </a></li>
+        <li class="nav-item"><a class="nav-link" href="#"> Successes </a></li>
+        <li class="nav-item"><a class="nav-link" href="#"> Campaigns </a></li>
+        <li class="nav-item"><a class="nav-link" href="#"> Apply for Sponsorship </a></li>
+        <li class="nav-item"><a class="nav-link" href="./faq.html"> FAQ </a></li>
+        <li class="nav-item"><a class="nav-link" href="./contact.html"> Contact Us </a></li>    
+      </ul>
+    </div>
+  </header>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-1" style="background-color: transparent;"></div>
+      <div class="col-md-10" style="background-color: transparent; font">
+        <!-- <div class="container"> -->
+          <div class="jumbotron flex-column" style="background-color: transparent;">
+            <h1 class="title">Interested in Donating?</h1>
+            <h2 class="subtitle">In just a few steps, you can make a difference for a lifetime!</h2>
+          </div>
+          <div class="buttonDiv">
+          <button class="button">Donate Now!</button>
+          <button class="button">Become a Sponsor!</button>
+          </div>
+          <div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+            <ol class="carousel-indicators">
+              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+              <li data-target="#myCarousel" data-slide-to="1"></li>
+              <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+
+            <div class="carousel-inner">
+              <div class="item active">
+                <img src="http://c8.alamy.com/comp/HEPX37/us-army-veteran-spc-michael-stephens-of-belgrade-montana-prepares-HEPX37.jpg" class="center">
+              </div>
+              <div class="item">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/c/ce/Flickr_-_The_U.S._Army_-_Soldiers_Recognized_at_Northwestern_University_for_Veterans_Day.jpg" alt="Army Navy 2017" class="center">
+              </div>
+              <div class="item">
+                <img src="https://cdn-images-1.medium.com/max/800/0*dS-6GjmbffgApNOK.jpg" alt="New York" class="center">
+              </div>
+            </div>
+
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+          
+      </div>
+      <div class="col-md-1" style="background-color: transparent;">        
+      </div>
+    </div>
+  </div>
 </body>
-
-<template name="hello">
-  <button>Click Me</button>
-  <p>You've pressed the button {{counter}} times.</p>
-</template>
-
-<template name="info">
-  <h2>Learn Meteor!</h2>
-  <ul>
-    <li><a href="https://www.meteor.com/try" target="_blank">Do the Tutorial</a></li>
-    <li><a href="http://guide.meteor.com" target="_blank">Follow the Guide</a></li>
-    <li><a href="https://docs.meteor.com" target="_blank">Read the Docs</a></li>
-    <li><a href="https://forums.meteor.com" target="_blank">Discussions</a></li>
-  </ul>
-</template>
